@@ -1,0 +1,15 @@
+group =  'io.github.wellingtoncosta.sescomp'
+version = '1.0.0-SNAPSHOT'
+
+mainClassName = "io.github.wellingtoncosta.sescomp.bookservice.BookServiceApp"
+
+dependencies {
+    implementation "com.zaxxer:HikariCP"
+    implementation "org.postgresql:postgresql:42.2.8"
+    implementation "org.flywaydb:flyway-core"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
+
+    compileOnly "org.projectlombok:lombok"
+    annotationProcessor "org.projectlombok:lombok"
+}
